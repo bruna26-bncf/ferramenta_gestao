@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>943</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>943</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>943</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Banco de Investimentos do Banco do Brasil</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo_bb.ico</normaloff>logo_bb.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(15, 62, 104);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>921</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="matriculaLabel">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(15, 62, 104);</string>
+       </property>
+       <property name="text">
+        <string>Matricula</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="textoMatricula">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>F0000000</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="senhaLabel">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(15, 62, 104);</string>
+       </property>
+       <property name="text">
+        <string>Senha</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="textoSenha">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>********</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="AutenticadorLabel">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(15, 62, 104);</string>
+       </property>
+       <property name="text">
+        <string>*Autenticador</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="textoAutenticador">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>6</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>******</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="logarButton">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="tabletTracking">
+        <bool>true</bool>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton{
+background-color: rgb(255, 255, 255);
+color: rgb(15, 62, 104);
+border-style:outset;
+border-width:2px;
+border-radius:7px;
+border-color: rgb(15, 62, 104);
+}
+
+QToolButton:hover{
+	background-color: rgb(243, 243, 243);
+}</string>
+       </property>
+       <property name="text">
+        <string>Logar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>921</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="bemVindoLabel">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>26</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(15, 62, 104);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>bbbi.png</pixmap>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_versao">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(15, 62, 104);</string>
+       </property>
+       <property name="text">
+        <string>Versão: 0.0.0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>921</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="bemVindoLabel_2">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(15, 62, 104);</string>
+       </property>
+       <property name="text">
+        <string>*Campo Autenticador necessário apenas para aqueles funcionarios que já possuem segundo fator de autenticação</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>943</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+
+color: rgb(0, 0, 0);
+
+selection-background-color: rgb(243, 243, 243);
+</string>
+   </property>
+   <widget class="QMenu" name="menuDistribuicao">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Distribuição</string>
+    </property>
+    <addaction name="actionArquivo_UBS"/>
+    <addaction name="actionPreencher_Planilha"/>
+    <addaction name="actionLista_Operacoes"/>
+   </widget>
+   <addaction name="menuDistribuicao"/>
+  </widget>
+  <action name="actionAbsorcao">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/img_ameba.png</normaloff>../../.designer/backup/img_ameba.png</iconset>
+   </property>
+   <property name="text">
+    <string>Absorção</string>
+   </property>
+  </action>
+  <action name="actionCapturaLote">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../Aplicativos BB/Conciliacao 4.0/img_lampada.png</normaloff>../../../../Aplicativos BB/Conciliacao 4.0/img_lampada.png</iconset>
+   </property>
+   <property name="text">
+    <string>Captura Lote</string>
+   </property>
+  </action>
+  <action name="actionConvenios">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/img_apertodemao.png</normaloff>../../.designer/backup/img_apertodemao.png</iconset>
+   </property>
+   <property name="text">
+    <string>Convênios</string>
+   </property>
+  </action>
+  <action name="actionEquipes">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/img_pessoas.png</normaloff>../../.designer/backup/img_pessoas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Equipes</string>
+   </property>
+  </action>
+  <action name="actionGerar_GSV">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/img_gsv.png</normaloff>../../.designer/backup/img_gsv.png</iconset>
+   </property>
+   <property name="text">
+    <string>Gerar GSV</string>
+   </property>
+  </action>
+  <action name="actionAgrupamento">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/img_agrupar.png</normaloff>../../.designer/backup/img_agrupar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agrupamento</string>
+   </property>
+  </action>
+  <action name="actionConsulta_Base">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/img_lupa2.png</normaloff>../../.designer/backup/img_lupa2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consulta Base</string>
+   </property>
+  </action>
+  <action name="actionPreConciliador">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/img_lampada.png</normaloff>../../.designer/backup/img_lampada.png</iconset>
+   </property>
+   <property name="text">
+    <string>Conciliador</string>
+   </property>
+  </action>
+  <action name="actionTratamento_Maranhao">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/img_computadores.png</normaloff>../../.designer/backup/img_computadores.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ocorrências Credoras</string>
+   </property>
+  </action>
+  <action name="actionConciliador">
+   <property name="text">
+    <string>Conciliador</string>
+   </property>
+  </action>
+  <action name="actionLiberar_Ocorrencias">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/liberarOcorrencias.png</normaloff>../../.designer/backup/liberarOcorrencias.png</iconset>
+   </property>
+   <property name="text">
+    <string>Liberar Ocorrências</string>
+   </property>
+  </action>
+  <action name="actionBusca_Base">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/img_lupa2.png</normaloff>../../.designer/backup/img_lupa2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Busca Base</string>
+   </property>
+  </action>
+  <action name="actionArquivo_UBS">
+   <property name="text">
+    <string>Arquivo Excel UBS</string>
+   </property>
+  </action>
+  <action name="actionFormul_rio_Arquivo_UBS">
+   <property name="text">
+    <string>Formulário: Arquivo UBS</string>
+   </property>
+  </action>
+  <action name="actionPreencher_Planilha">
+   <property name="text">
+    <string>Preencher Planilha</string>
+   </property>
+  </action>
+  <action name="actionLista_Operacoes">
+   <property name="text">
+    <string>Lista Operações</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
